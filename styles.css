@@ -1,0 +1,297 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    background-color: #000; /* Cor de fundo para o corpo */
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #333; /* Cor de fundo para o cabeçalho */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333; /* Cor de fundo para a barra de navegação */
+    text-align: center;
+}
+
+.navlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navlist li {
+    display: inline;
+    padding: 10px;
+}
+
+.navlink {
+    color: #fff; /* Cor dos links */
+    text-decoration: none;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    background-color: #000; /* Cor de fundo para o conteúdo principal */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adicionando sombra */
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.promotion-fieldset {
+    border: 2px solid #00ff00; /* Cor da borda para o campo de promoção */
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.promotion-fieldset:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+.promotion-item {
+    text-align: center;
+}
+
+.promotion-image {
+    max-width: 50%; /* Reduzindo o tamanho das imagens */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.promotion-title {
+    font-size: 24px;
+    margin-bottom: 15px; /* Aumentando a margem inferior */
+}
+
+.promotion-price {
+    font-size: 20px;
+    color: #00ff00; /* Cor do preço */
+    margin-bottom: 10px;
+}
+
+.promotion-info {
+    font-size: 18px;
+    color: #fff; /* Cor do texto de informações */
+    margin-bottom: 20px;
+}
+
+.promotion-link {
+    text-decoration: none;
+}
+
+.promotion-guarantee {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.promotion-satisfaction {
+    font-size: 18px;
+    color: #fff; /* Cor do texto de satisfação */
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333; /* Cor de fundo para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media queries para telas menores */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .section-content {
+        font-size: 16px;
+    }
+    .promotion-title {
+        font-size: 20px;
+    }
+    .promotion-price {
+        font-size: 18px;
+    }
+    .promotion-info {
+        font-size: 16px;
+    }
+    .promotion-guarantee {
+        font-size: 18px;
+    }
+    .promotion-satisfaction {
+        font-size: 16px;
+    }
+}
+
+/* Disposição lado a lado das promoções em telas maiores */
+@media only screen and (min-width: 768px) {
+    .promotion-item {
+        display: inline-block;
+        width: 45%; /* Definindo a largura das promoções */
+        margin: 1.5%; /* Margem entre as promoções */
+        vertical-align: top;
+    }
+}
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: whitesmoke; /* Cor de fundo para a barra de navegação */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+}
+
+/* Estilos para os itens de navegação */
+.navlist li {
+    display: inline;
+    padding: 10px;
+}
+
+.navlink {
+    color: black; /* Cor dos links */
+    text-decoration: none;
+    font-size: 18px; /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.navlink:hover {
+    color: #423bc2; /* Cor do link ao passar o mouse */
+}
+
+/* Estilos para a seção de promoções */
+.promotion-fieldset {
+    border: 2px solid #00ff00; /* Cor da borda para o campo de promoção */
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    animation: pulse 1s infinite; /* Animação de pulsação */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.promotion-fieldset:hover {
+    animation: none; /* Parando a animação ao passar o mouse */
+}
+/* Estilos para o formulário de inscrição Mailchimp */
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
+#mc_embed_signup_scroll {
+    padding: 15px;
+}
+
+#mc_embed_signup h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.mc-field-group {
+    margin-bottom: 15px;
+}
+
+.mc-field-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.mc-field-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#mc-embedded-subscribe-form .clear {
+    text-align: center;
+}
+
+#mc-embedded-subscribe-form .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mc-embedded-subscribe-form .button:hover {
+    background-color: #0056b3;
+}
+
+.response {
+    margin-top: 10px;
+}
+
+.response.error {
+    color: #ff0000;
+}
+
+.response.success {
+    color: #008000;
+}
+
+/* Estilos para esconder o campo adicional do Mailchimp */
+#mc_embed_signup_scroll input[type="text"] {
+    display: none;
+}
